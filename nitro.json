@@ -1,0 +1,17 @@
+{
+  "cxxNamespace": ["nitroocr"],
+  "ios": {
+    "iosModuleName": "NitroOcr"
+  },
+  "android": {
+    "androidNamespace": ["nitroocr"],
+    "androidCxxLibName": "nitroocr"
+  },
+  "autolinking": {
+    "NitroOcr": {
+      "swift": "NitroOcr",
+      "kotlin": "NitroOcr"
+    }
+  },
+  "ignorePaths": ["node_modules"]
+}
