@@ -44,6 +44,15 @@ jobs:
       - name: Run unit tests
         run: yarn test --maxWorkers=2 --coverage
 
+      - name: Build plugin
+        run: yarn build:plugin
+
+      - name: Typecheck plugin
+        run: yarn typecheck:plugin
+
+      - name: Run plugin tests
+        run: yarn test:plugin
+
   build-library:
     runs-on: ubuntu-latest
 
