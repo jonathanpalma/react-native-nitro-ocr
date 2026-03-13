@@ -24,15 +24,10 @@ enum HierarchyBuilder {
     let bbox = flipBoundingBox(obs.boundingBox)
     let corners = rectangleCornerPoints(obs)
 
-    // Language detection (iOS 16+)
-    var recognizedLanguages: [String] = []
-    var language = ""
-    if #available(iOS 16.0, *) {
-      if let lang = candidate.recognizedLanguage {
-        language = lang
-        recognizedLanguages = [lang]
-      }
-    }
+    // iOS Vision does not expose per-observation recognized language.
+    // Language arrays are empty on iOS; Android provides this via ML Kit.
+    let recognizedLanguages: [String] = []
+    let language = ""
 
     // Build lines by splitting candidate string on newlines
     let lines = buildLines(

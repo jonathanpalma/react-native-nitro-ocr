@@ -381,7 +381,7 @@ Documented here and in JSDoc on each property so developers aren't surprised.
 | **Hierarchy reconstruction** | Reconstructed from flat observations via `boundingBox(for:)` on text subranges | Direct from ML Kit's `TextBlock > Line > Element > Symbol` |
 | **Corner points** | From `VNRectangleObservation` quad at all levels; axis-aligned fallback when unavailable | From `getCornerPoints()` at all levels; axis-aligned fallback when null |
 | **Angle** | Computed from corner points | Directly from `getAngle()` |
-| **Recognized language** | Per-observation (iOS 16+), not per-word | Per-level via `getRecognizedLanguage()` |
+| **Recognized language** | Not available (Vision does not expose detected language); returns empty arrays | Per-level via `getRecognizedLanguage()` |
 | **Recognition level** | `.fast` vs `.accurate` — meaningful performance/quality difference | Ignored (ML Kit has one mode per script) |
 | **Language correction** | `usesLanguageCorrection` — NLP post-processing | Ignored (not configurable in ML Kit) |
 | **Script selection** | Automatic (Vision handles all scripts) | Requires explicit script hint to load correct model |
