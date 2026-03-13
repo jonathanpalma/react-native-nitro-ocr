@@ -1,6 +1,6 @@
 {
   "name": "react-native-nitro-ocr",
-  "version": "0.1.0",
+  "version": "0.1.0-beta.0",
   "description": "On-device OCR for React Native. Offline text recognition using Apple Vision on iOS and Google ML Kit on Android, built on Nitro Modules.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",

@@ -1,3 +1,8 @@
+[![Version][version-badge]][package]
+[![Install Size][size-badge]][package-size]
+[![Downloads][downloads-badge]][npmcharts]
+[![MIT License][license-badge]][license]
+
 # react-native-nitro-ocr
 
 On-device OCR for React Native. Offline text recognition using Apple Vision on iOS and Google ML Kit on Android, built on [Nitro Modules](https://nitro.margelo.com/).
@@ -187,3 +192,12 @@ MIT
 ---
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+
+[version-badge]: https://img.shields.io/npm/v/react-native-nitro-ocr.svg?style=flat-square
+[package]: https://www.npmjs.com/package/react-native-nitro-ocr
+[size-badge]: https://flat.badgen.net/packagephobia/install/react-native-nitro-ocr
+[package-size]: https://packagephobia.now.sh/result?p=react-native-nitro-ocr
+[downloads-badge]: https://img.shields.io/npm/dm/react-native-nitro-ocr.svg?style=flat-square
+[npmcharts]: http://npmcharts.com/compare/react-native-nitro-ocr
+[license-badge]: https://img.shields.io/npm/l/react-native-nitro-ocr.svg?style=flat-square
+[license]: https://github.com/jonathanpalma/react-native-nitro-ocr/blob/main/LICENSE
